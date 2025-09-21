@@ -73,20 +73,24 @@ def gcd_prime_factorization(a, b):
         return a
     
     # Get prime factors for both numbers
-    factors_a = get_prime_factors(abs(a))
-    factors_b = get_prime_factors(abs(b))
+    # Example: a=18, b=24
+    factors_a = get_prime_factors(abs(a))  # [2, 3, 3] for 18
+    factors_b = get_prime_factors(abs(b))  # [2, 2, 2, 3] for 24
     
     # Find common prime factors using Counter intersection
-    counter_a = Counter(factors_a)
-    counter_b = Counter(factors_b)
-    common_counter = counter_a & counter_b  # Intersection of counters
+    # Convert lists to counters to count occurrences
+    counter_a = Counter(factors_a)  # {2: 1, 3: 2} for 18
+    counter_b = Counter(factors_b)  # {2: 3, 3: 1} for 24
+    common_counter = counter_a & counter_b  # {2: 1, 3: 1} - min of each count
     
     # Convert back to list of factors
+    # Take the minimum count for each common factor
     common_factors = []
     for factor, count in common_counter.items():
-        common_factors.extend([factor] * count)
+        common_factors.extend([factor] * count)  # [2, 3] for our example
     
     # Calculate GCD by multiplying common factors
+    # 2 × 3 = 6, which is the GCD of 18 and 24
     gcd = 1
     for factor in common_factors:
         gcd *= factor
