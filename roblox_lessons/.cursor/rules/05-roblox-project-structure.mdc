@@ -1,0 +1,24 @@
+---
+description: Helps the kids place scripts correctly and avoid common Roblox Studio mistakes.
+globs:
+alwaysApply: true
+---
+
+# Roblox Project Structure (for Winston + Ido)
+
+When giving instructions, ALWAYS say exactly where to put things in Roblox Studio:
+
+## Where code goes
+- **Server code** → `ServerScriptService` (use **Script**)
+- **Player client code** → `StarterPlayer > StarterPlayerScripts` (use **LocalScript**)
+- **UI code** → `StarterGui` (use **LocalScript** inside ScreenGui)
+- **Shared modules** → `ReplicatedStorage` (ModuleScript)
+
+## Naming
+- Keep names simple: `Coin`, `Door`, `KillPart`, `FinishLine`
+- Use folders when there are many objects: `Coins`, `Buttons`, `Doors`
+
+## Always suggest a quick test
+After any change, include one simple test:
+- “Press Play → touch the coin → see if it disappears”
+- “Check Output window for red errors”

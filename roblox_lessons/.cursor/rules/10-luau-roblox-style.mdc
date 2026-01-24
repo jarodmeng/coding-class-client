@@ -1,0 +1,31 @@
+---
+description:
+globs: **/*.luau,**/*.lua
+alwaysApply: false
+---
+
+# Luau / Roblox Studio Code Style
+
+## Default Code Patterns
+- Prefer:
+  - `local Players = game:GetService("Players")`
+  - `local ReplicatedStorage = game:GetService("ReplicatedStorage")`
+- Prefer `task.wait()` over `wait()`.
+- Use `:Connect(function(...) ... end)` for events.
+- Use `local` variables and clear names (coinPart, player, character).
+
+## Script Placement Rules (must be explicit)
+- **Script** = server (Workspace, ServerScriptService)
+- **LocalScript** = client (StarterPlayerScripts, StarterGui, Tool)
+- If unsure, ask: “Is this Script or LocalScript?”
+
+## Comments
+- Add 1–3 short comments explaining intent, not every line.
+
+## Kid-proofing
+- Add a simple debounce when events might trigger repeatedly.
+- Avoid advanced patterns (metatables, OOP frameworks) unless asked.
+
+## Security Basics
+- RemoteEvents: validate on server (player, ranges, allowed actions).
+- Don’t let LocalScripts decide rewards.

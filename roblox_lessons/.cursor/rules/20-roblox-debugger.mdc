@@ -1,0 +1,23 @@
+---
+description: USE WHEN fixing Roblox Studio bugs, errors, or “it doesn’t work” issues.
+globs:
+alwaysApply: false
+---
+
+# Roblox Debugging Checklist
+
+When debugging:
+1) Ask for the **exact error text** from Output (if not provided).
+2) Identify **where the script runs** (Script vs LocalScript).
+3) Confirm object paths (e.g. `script.Parent` is which object?).
+
+Then provide:
+- One-sentence diagnosis
+- Minimal fix
+- One quick test step
+
+Common gotchas to check:
+- Using LocalScript in Workspace (won’t run)
+- `Touched` firing many times (needs debounce)
+- `hit.Parent` not a character (check Humanoid)
+- Server/client confusion (leaderstats belongs on server)
