@@ -6,5 +6,6 @@ Kid-friendly Roblox Studio + Luau lessons, with Cursor rules and scripts.
 |--------|--------|-------------|
 | 1 | [lesson-01-coin-collector](lesson-01-coin-collector/README.md) | Coin Collector — touch a coin, score goes up |
 | 2 | [lesson-02-lava-and-checkpoints](lesson-02-lava-and-checkpoints/README.md) | Lava + Checkpoints — lava kills you, checkpoints respawn you further in |
+| 3 | [lesson-03-ui-and-finishline](lesson-03-ui-and-finishline/README.md) | UI + Finish Line — Coins UI on screen, finish line checks coins and shows a message |
 
 Open a lesson folder and follow its README.

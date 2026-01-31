@@ -1,0 +1,3 @@
+-- WinEvent.server.lua (NOT NEEDED if you use FinishLine.server.lua)
+-- FinishLine.server.lua auto-creates WinEvent in ReplicatedStorage.
+-- This file is just a note.
