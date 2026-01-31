@@ -1,0 +1,3 @@
+-- ResetRespawnOnWin.server.lua (optional snippet)
+-- Later, if you add a finish line, you can reset checkpoints like this:
+-- player.RespawnLocation = nil

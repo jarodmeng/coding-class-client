@@ -1,59 +1,10 @@
-# Roblox + Cursor Lesson 1: Coin Collector (Free Tier Friendly)
+# Roblox + Cursor Lessons
 
-This repo folder contains everything you need for **Lesson 1**:
-- Cursor Project Rules (kid-friendly)
-- Two Roblox scripts (Leaderstats + Coin)
-- A tiny prompt cheatsheet
+Kid-friendly Roblox Studio + Luau lessons, with Cursor rules and scripts.
 
-## 1) Install Cursor Rules (recommended)
-These rules make Cursor behave like a Roblox teacher and keep answers short.
+| Lesson | Folder | Description |
+|--------|--------|-------------|
+| 1 | [lesson-01-coin-collector](lesson-01-coin-collector/README.md) | Coin Collector — touch a coin, score goes up |
+| 2 | [lesson-02-lava-and-checkpoints](lesson-02-lava-and-checkpoints/README.md) | Lava + Checkpoints — lava kills you, checkpoints respawn you further in |
 
-**Do this inside your project root:**
-- Keep the folder: `.cursor/rules/`
-
-Cursor will auto-apply rules when you open the project in Cursor.
-
-## 2) Lesson 1 Goal
-Touch a coin → coin disappears → your Coins score goes up by 1.
-
-## 3) Roblox Studio Setup (step-by-step)
-
-### Step A: Create leaderstats (Coins)
-1. Open **Roblox Studio**
-2. Go to **ServerScriptService**
-3. Add a **Script** named `Leaderstats`
-4. Copy and paste:
-   - `lessons/lesson-01-coin-collector/scripts/Leaderstats.server.lua`
-
-✅ Test:
-- Press **Play**
-- You should see a leaderboard appear showing **Coins = 0**
-
-### Step B: Create a Coin part
-1. In **Workspace**, insert a **Part**
-2. Rename it to: `Coin`
-3. Set:
-   - Anchored = true
-   - (Optional) Shape = Ball
-
-### Step C: Add Coin script
-1. Under `Coin`, insert a **Script**
-2. Name it: `CoinScript`
-3. Copy and paste:
-   - `lessons/lesson-01-coin-collector/scripts/CoinScript.server.lua`
-
-✅ Test:
-- Press **Play**
-- Touch the coin
-- Coins should become **1** and the coin should disappear
-
-## 4) Optional Upgrade: Coin respawns after 5 seconds
-Replace `coinPart:Destroy()` with the snippet:
-- `lessons/lesson-01-coin-collector/scripts/CoinRespawnSnippet.lua`
-
-## 5) If something breaks
-Copy the script + the red Output error into Cursor and ask:
-
-> Fix it with the smallest change. Explain like I'm 10. Then give me one tiny upgrade.
-
-Good luck and have fun!
+Open a lesson folder and follow its README.
