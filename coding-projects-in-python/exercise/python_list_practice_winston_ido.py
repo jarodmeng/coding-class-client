@@ -21,23 +21,23 @@ print("Question 1: Mystery Animal Line")
 print("--------------------------------")
 
 # 1. What is the first animal?
-first_animal = animals[___]   # TODO: fill in the index
+first_animal = animals[0]   # TODO: fill in the index
 print("1. First animal:", first_animal)
 
 # 2. What is the last animal?
-last_animal = animals[___]    # TODO: use a negative index
+last_animal = animals[-1]    # TODO: use a negative index
 print("2. Last animal:", last_animal)
 
 # 3. What is the third animal from the end?
-third_from_end = animals[___] # TODO: use a negative index
+third_from_end = animals[-3] # TODO: use a negative index
 print("3. Third animal from the end:", third_from_end)
 
 # 4. What are the first three animals?
-first_three = animals[___:___] # TODO: use slicing
+first_three = animals[0:3] # TODO: use slicing
 print("4. First three animals:", first_three)
 
 # 5. What are the last two animals?
-last_two = animals[___:]       # TODO: use slicing with a negative index
+last_two = animals[-2:]       # TODO: use slicing with a negative index
 print("5. Last two animals:", last_two)
 
 
@@ -67,11 +67,11 @@ print("----------------------------------")
 # 3. Try to use at least one negative index.
 
 # Part A: Get each word one by one using indexes.
-word_1 = words[___]   # TODO: should be "Meet"
-word_2 = words[___]   # TODO: should be "me"
-word_3 = words[___]   # TODO: should be "at"
-word_4 = words[___]   # TODO: should be "the"
-word_5 = words[___]   # TODO: should be "library"; try using a negative index
+word_1 = words[1]   # TODO: should be "Meet"
+word_2 = words[3]   # TODO: should be "me"
+word_3 = words[5]   # TODO: should be "at"
+word_4 = words[7]   # TODO: should be "the"
+word_5 = words[9]   # TODO: should be "library"; try using a negative index
 
 secret_message = [word_1, word_2, word_3, word_4, word_5]
 print("Part A secret message:", secret_message)
@@ -83,7 +83,7 @@ print("Part A secret message:", secret_message)
 # Hint:
 # The secret words are every other word starting from "Meet".
 
-secret_message_bonus = words[___:___:___]  # TODO: fill in start, stop, step
+secret_message_bonus = words[1:10:2]  # TODO: fill in start, stop, step
 print("Part B bonus message:", secret_message_bonus)
 
 
