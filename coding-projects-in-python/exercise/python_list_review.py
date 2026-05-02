@@ -38,16 +38,16 @@ print("====================================")
 
 colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
 
-answer_1_1 = colors[TODO]   # should be "red"
+answer_1_1 = colors[0]   # should be "red"
 check("1.1 First color", answer_1_1, "red")
 
-answer_1_2 = colors[TODO]   # should be "yellow"
+answer_1_2 = colors[2]   # should be "yellow"
 check("1.2 Third color", answer_1_2, "yellow")
 
-answer_1_3 = colors[TODO]   # should be "blue"
+answer_1_3 = colors[4]   # should be "blue"
 check("1.3 Fifth color", answer_1_3, "blue")
 
-answer_1_4 = colors[TODO]   # should be "violet"
+answer_1_4 = colors[6]   # should be "violet"
 check("1.4 Seventh color", answer_1_4, "violet")
 
 
@@ -61,16 +61,16 @@ print("===========================")
 
 animals = ["ant", "bee", "cat", "dog", "eel", "fox", "goat", "hawk"]
 
-answer_2_1 = animals[TODO]   # should be "hawk"
+answer_2_1 = animals[-1]   # should be "hawk"
 check("2.1 Last animal", answer_2_1, "hawk")
 
-answer_2_2 = animals[TODO]   # should be "goat"
+answer_2_2 = animals[-2]   # should be "goat"
 check("2.2 Second last animal", answer_2_2, "goat")
 
-answer_2_3 = animals[TODO]   # should be "fox"
+answer_2_3 = animals[-3]   # should be "fox"
 check("2.3 Third last animal", answer_2_3, "fox")
 
-answer_2_4 = animals[TODO]   # should be "dog"
+answer_2_4 = animals[-5]   # should be "dog"
 check("2.4 Fifth animal from the end", answer_2_4, "dog")
 
 
@@ -84,19 +84,19 @@ print("==========================")
 
 numbers = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
 
-answer_3_1 = numbers[TODO:TODO]   # should be [10, 11, 12]
+answer_3_1 = numbers[0:3]   # should be [10, 11, 12]
 check("3.1 First three numbers", answer_3_1, [10, 11, 12])
 
-answer_3_2 = numbers[TODO:TODO]   # should be [13, 14, 15]
+answer_3_2 = numbers[3:6]   # should be [13, 14, 15]
 check("3.2 Middle three numbers", answer_3_2, [13, 14, 15])
 
-answer_3_3 = numbers[TODO:TODO]   # should be [16, 17, 18, 19]
+answer_3_3 = numbers[6:10]   # should be [16, 17, 18, 19]
 check("3.3 Last four numbers using positive indexes", answer_3_3, [16, 17, 18, 19])
 
-answer_3_4 = numbers[TODO:]       # should be [16, 17, 18, 19]
+answer_3_4 = numbers[6:]       # should be [16, 17, 18, 19]
 check("3.4 Last four numbers using start only", answer_3_4, [16, 17, 18, 19])
 
-answer_3_5 = numbers[:TODO]       # should be [10, 11, 12, 13]
+answer_3_5 = numbers[:4]       # should be [10, 11, 12, 13]
 check("3.5 First four numbers using stop only", answer_3_5, [10, 11, 12, 13])
 
 
@@ -110,16 +110,16 @@ print("=====================")
 
 digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-answer_4_1 = digits[TODO:TODO:TODO]   # should be [0, 2, 4, 6, 8]
+answer_4_1 = digits[0:9:2]   # should be [0, 2, 4, 6, 8]
 check("4.1 Even digits", answer_4_1, [0, 2, 4, 6, 8])
 
-answer_4_2 = digits[TODO:TODO:TODO]   # should be [1, 3, 5, 7, 9]
+answer_4_2 = digits[1:10:2]   # should be [1, 3, 5, 7, 9]
 check("4.2 Odd digits", answer_4_2, [1, 3, 5, 7, 9])
 
-answer_4_3 = digits[TODO:TODO:TODO]   # should be [2, 5, 8]
+answer_4_3 = digits[2:9:3]   # should be [2, 5, 8]
 check("4.3 Jump by 3", answer_4_3, [2, 5, 8])
 
-answer_4_4 = digits[TODO:TODO:TODO]   # should be [0, 3, 6, 9]
+answer_4_4 = digits[0:10:3]   # should be [0, 3, 6, 9]
 check("4.4 Every third digit", answer_4_4, [0, 3, 6, 9])
 
 
@@ -133,16 +133,16 @@ print("============================================")
 
 letters = ["a", "b", "c", "d", "e", "f", "g", "h"]
 
-answer_5_1 = letters[TODO:TODO:TODO]   # should be ["h", "g", "f", "e", "d", "c", "b", "a"]
+answer_5_1 = letters[::-1]   # should be ["h", "g", "f", "e", "d", "c", "b", "a"]
 check("5.1 Reverse the whole list", answer_5_1, ["h", "g", "f", "e", "d", "c", "b", "a"])
 
-answer_5_2 = letters[TODO:TODO:TODO]   # should be ["g", "f", "e"]
+answer_5_2 = letters[6:3:-1]   # should be ["g", "f", "e"]
 check("5.2 Reverse from g to e", answer_5_2, ["g", "f", "e"])
 
-answer_5_3 = letters[TODO:TODO:TODO]   # should be ["h", "f", "d", "b"]
+answer_5_3 = letters[-1:0:-2]   # should be ["h", "f", "d", "b"]
 check("5.3 Reverse by step 2", answer_5_3, ["h", "f", "d", "b"])
 
-answer_5_4 = letters[TODO:TODO:TODO]   # should be ["f", "d", "b"]
+answer_5_4 = letters[5:0:-2]   # should be ["f", "d", "b"]
 check("5.4 Reverse from f by step 2", answer_5_4, ["f", "d", "b"])
 
 
@@ -165,19 +165,19 @@ mission_log = [
     "land"
 ]
 
-answer_6_1 = mission_log[TODO]          # should be "launch"
+answer_6_1 = mission_log[0]          # should be "launch"
 check("6.1 First mission step", answer_6_1, "launch")
 
-answer_6_2 = mission_log[TODO]          # should be "land", using negative index
+answer_6_2 = mission_log[-1]          # should be "land", using negative index
 check("6.2 Last mission step", answer_6_2, "land")
 
-answer_6_3 = mission_log[TODO:TODO]     # should be ["scan moon", "collect sample", "repair antenna"]
+answer_6_3 = mission_log[2:5]     # should be ["scan moon", "collect sample", "repair antenna"]
 check("6.3 Moon work", answer_6_3, ["scan moon", "collect sample", "repair antenna"])
 
-answer_6_4 = mission_log[TODO:TODO:TODO]  # should be ["launch", "scan moon", "repair antenna", "return"]
+answer_6_4 = mission_log[0:7:2]  # should be ["launch", "scan moon", "repair antenna", "return"]
 check("6.4 Every other mission step starting from launch", answer_6_4, ["launch", "scan moon", "repair antenna", "return"])
 
-answer_6_5 = mission_log[TODO:TODO:TODO]  # should be ["land", "return", "take photo", "repair antenna"]
+answer_6_5 = mission_log[-1:-5:-1]  # should be ["land", "return", "take photo", "repair antenna"]
 check("6.5 Last four mission steps in reverse", answer_6_5, ["land", "return", "take photo", "repair antenna"])
 
 
@@ -200,13 +200,13 @@ code_words = [
 # ["The", "key", "is", "under", "the", "blue", "stone"]
 
 answer_7_1 = [
-    code_words[TODO],   # "The"
-    code_words[TODO],   # "key"
-    code_words[TODO],   # "is"
-    code_words[TODO],   # "under"
-    code_words[TODO],   # "the"
-    code_words[TODO],   # "blue"
-    code_words[TODO],   # "stone"
+    code_words[1],   # "The"
+    code_words[4],   # "key"
+    code_words[5],   # "is"
+    code_words[6],   # "under"
+    code_words[8],   # "the"
+    code_words[9],   # "blue"
+    code_words[10],   # "stone"
 ]
 check("7.1 Secret message using individual indexes", answer_7_1, ["The", "key", "is", "under", "the", "blue", "stone"])
 
@@ -214,14 +214,14 @@ check("7.1 Secret message using individual indexes", answer_7_1, ["The", "key", 
 # Extract this part using ONE slice:
 # ["the", "blue", "stone"]
 
-answer_7_2 = code_words[TODO:TODO]
+answer_7_2 = code_words[8:11]
 check("7.2 Final location using one slice", answer_7_2, ["the", "blue", "stone"])
 
 # Goal 3:
 # Extract this reversed clue using ONE slice:
 # ["stone", "blue", "the"]
 
-answer_7_3 = code_words[TODO:TODO:TODO]
+answer_7_3 = code_words[-2:-5:-1]
 check("7.3 Reversed final location", answer_7_3, ["stone", "blue", "the"])
 
 
@@ -243,21 +243,21 @@ spell_parts = [
 # Use slicing to get:
 # ["moon", "star", "cloud", "sun"]
 
-answer_8_1 = spell_parts[TODO:TODO:TODO]
+answer_8_1 = spell_parts[1:8:2]
 check("8.1 Every other magic word from moon to sun", answer_8_1, ["moon", "star", "cloud", "sun"])
 
 # Challenge B:
 # Use slicing to get:
 # ["spark", "shadow", "sun", "cloud"]
 
-answer_8_2 = spell_parts[TODO:TODO:TODO]
+answer_8_2 = spell_parts[-1:4:-2]
 check("8.2 Reverse magic jump", answer_8_2, ["spark", "shadow", "sun", "cloud"])
 
 # Challenge C:
 # Use slicing to get:
 # ["light", "wind", "earth", "water", "fire"]
 
-answer_8_3 = spell_parts[TODO:TODO:TODO]
+answer_8_3 = spell_parts[-4::-2]
 check("8.3 Reverse spell path", answer_8_3, ["light", "wind", "earth", "water", "fire"])
 
 
